@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fort Collins Poop Patrol | Weekly Poop Scooping Subscription</title>
-  <meta name="description" content="Weekly dog poop scooping in Fort Collins. $60/month founders rate for the first customers. Easy signup, autopay, cancel anytime." />
+  <meta name="description" content="Weekly dog poop scooping in Fort Collins. Founders Rate: $60/month for life (limited). New customers will be $80/month once filled. Easy signup, autopay, cancel anytime." />
   <meta name="theme-color" content="#0f3d2e" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Fort Collins Poop Patrol" />
-  <meta property="og:description" content="Weekly dog poop scooping. Founders rate $60/month. Quick signup." />
+  <meta property="og:description" content="Weekly dog poop scooping. Founders Rate: $60/month for life (limited). Quick signup." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -141,6 +141,7 @@
       background: rgba(251,191,36,.15);
       border: 1px solid rgba(251,191,36,.25);
       color: #fde68a;
+      white-space:nowrap;
     }
     .price{
       font-size:42px; font-weight:900; letter-spacing:-.02em; margin:6px 0 2px;
@@ -162,9 +163,7 @@
       gap:14px;
       margin:16px 0 0;
     }
-    .mini{
-      padding:16px;
-    }
+    .mini{padding:16px}
     .mini h4{margin:0 0 8px; font-size:15px}
     .mini p{margin:0; color:var(--muted); font-size:13px}
     section{margin-top:22px}
@@ -172,9 +171,7 @@
     .sectionTitle{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin-bottom:10px}
     .sectionTitle h3{margin:0; font-size:20px}
     .sectionTitle p{margin:0; color:var(--muted); font-size:13px}
-    .steps{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;
-    }
+    .steps{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
     .step{padding:16px}
     .num{
       width:34px; height:34px; border-radius:12px;
@@ -244,7 +241,6 @@
     .stickyInner .left b{font-size:13px}
     .stickyInner .left span{font-size:12px; color:var(--muted)}
     .stickyInner .btn{padding:10px 14px}
-    .srOnly{position:absolute; left:-9999px}
 
     @media (max-width: 920px){
       .hero{grid-template-columns:1fr}
@@ -272,9 +268,8 @@
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a id="topCta" class="btn btnPrimary" href="STRIPE_PAYMENT_LINK_URL_HERE" target="_blank" rel="noopener">
-        Start for $60/mo
-        <span aria-hidden="true">→</span>
+      <a class="btn btnPrimary" href="https://buy.stripe.com/test_aFa7sKfYi1QFakp8Y4e3e00" target="_blank" rel="noopener">
+        Lock in $60/mo for life <span aria-hidden="true">→</span>
       </a>
     </header>
 
@@ -282,21 +277,21 @@
       <div class="hero">
         <div class="card heroLeft">
           <div class="kicker">
-            <div class="pill"><span class="check">✓</span> <b>Founders rate:</b> $60/month</div>
+            <div class="pill"><span class="check">✓</span> <b>Founders Rate:</b> $60/month for life</div>
             <div class="pill"><span class="check">✓</span> Weekly cleanups</div>
             <div class="pill"><span class="check">✓</span> Autopay • Cancel anytime</div>
           </div>
 
           <h2>Poop-free yard, every week — without thinking about it.</h2>
           <p class="sub">
-            We handle the weekly cleanup so you can enjoy your yard again.
-            Fast signup, recurring billing, and a simple service you’ll actually keep.
+            Lock in our founders rate and keep it for life.
+            Once the limited spots are filled, new customers will pay $80/month.
+            Same service — lower lifetime price.
           </p>
 
           <div class="ctaRow">
             <a class="btn btnPrimary" href="STRIPE_PAYMENT_LINK_URL_HERE" target="_blank" rel="noopener">
-              Claim founders rate ($60/mo)
-              <span aria-hidden="true">→</span>
+              Claim lifetime founders rate <span aria-hidden="true">→</span>
             </a>
             <a class="btn" href="#pricing">See what’s included</a>
           </div>
@@ -327,31 +322,32 @@
           <div class="priceBox">
             <div class="priceTop">
               <h3>Weekly Cleanup Subscription</h3>
-              <div class="badge" id="spotsBadge">Limited spots</div>
+              <div class="badge">Lifetime founders pricing</div>
             </div>
 
             <div class="price">$60<span style="font-size:16px; font-weight:800; color:var(--muted)">/mo</span></div>
-            <p class="per">Founders rate for early customers (non-transferable).</p>
+            <p class="per">
+              $60/month locked in for life.
+              Standard pricing will be $80/month once founders spots are filled.
+            </p>
 
             <ul>
-              <li><b>1x/week</b> full yard poop pickup</li>
-              <li><b>1 dog</b> included (easy add-ons later)</li>
-              <li>Up to <b>¼ acre</b> typical residential yard</li>
-              <li>Photo update on request (optional)</li>
+              <li><b>Weekly</b> full yard cleanup</li>
+              <li>Typical residential yards</li>
+              <li>Consistent service to keep buildup under control</li>
+              <li>Optional photo confirmation on request</li>
             </ul>
 
             <div class="ctaRow" style="margin-top:14px">
               <a class="btn btnPrimary" href="STRIPE_PAYMENT_LINK_URL_HERE" target="_blank" rel="noopener">
-                Start subscription
-                <span aria-hidden="true">→</span>
+                Start subscription <span aria-hidden="true">→</span>
               </a>
-              <button class="btn" id="copyLink" type="button" aria-label="Copy signup link">
-                Copy signup link
-              </button>
+              <button class="btn" id="copyLink" type="button">Copy signup link</button>
             </div>
 
             <div class="fine">
-              *Founders rate is non-transferable. Service area: Fort Collins & nearby neighborhoods.
+              Founders pricing is a lifetime rate tied to this account and is non-transferable.
+              Once founders spots are filled, new subscriptions will be offered at $80/month.
               Prefer text? <span id="phoneText">(555) 555-5555</span>
             </div>
 
@@ -359,7 +355,7 @@
               <div class="trustTag">🔒 Secure checkout via Stripe</div>
               <div class="trustTag">📅 Billing monthly</div>
               <div class="trustTag">🧾 Email receipt</div>
-              <div class="trustTag">✅ Cancel anytime</div>
+              <div class="trustTag">⏳ Limited founders spots available</div>
             </div>
           </div>
         </aside>
@@ -368,14 +364,13 @@
       <section id="how" class="card sectionCard">
         <div class="sectionTitle">
           <h3>How it works</h3>
-          <p>Simple, fast, and designed to reduce friction.</p>
         </div>
 
         <div class="steps">
           <div class="card step">
             <div class="num">1</div>
             <h4 style="margin:0 0 6px">Sign up in 60 seconds</h4>
-            <p style="margin:0;color:var(--muted)">Tap the button, choose card, and you’re in. Monthly autopay.</p>
+            <p style="margin:0;color:var(--muted)">Tap the button, enter your payment method, and you’re in. Monthly autopay.</p>
           </div>
           <div class="card step">
             <div class="num">2</div>
@@ -392,8 +387,8 @@
 
       <section class="card sectionCard">
         <div class="sectionTitle">
-          <h3>What customers care about</h3>
-          <p>Clarity + confidence = higher conversion.</p>
+          <h3>Common questions (answered)</h3>
+          <p>Confidence before checkout.</p>
         </div>
 
         <div class="grid3">
@@ -403,7 +398,7 @@
           </div>
           <div class="card mini">
             <h4>“What if it snows?”</h4>
-            <p>We work around weather when safe. Communication is key.</p>
+            <p>We work around weather when safe. We’ll communicate clearly.</p>
           </div>
           <div class="card mini">
             <h4>“Can I cancel?”</h4>
@@ -415,40 +410,43 @@
       <section id="faq" class="card sectionCard">
         <div class="sectionTitle">
           <h3>FAQ</h3>
-          <p>Answer objections before they bounce.</p>
         </div>
 
         <div class="faq">
           <details>
             <summary>What exactly is included in the $60/month plan?</summary>
-            <p>One weekly visit for a typical residential yard (up to ~¼ acre) with one dog included. We’ll expand tiers later (extra dogs, 2x/week, one-time cleanups).</p>
+            <p>One weekly visit for a typical residential yard. The goal is to keep buildup under control so your yard stays clean and usable.</p>
           </details>
 
           <details>
-            <summary>How do I cancel or pause?</summary>
-            <p>You can cancel anytime. Just do it before your next billing date to avoid the next charge. (We can add a “Pause” option later if you want.)</p>
+            <summary>Is the founders rate really “for life”?</summary>
+            <p>Yes — founders pricing stays at $60/month for as long as your subscription remains active. It’s tied to your account and non-transferable.</p>
           </details>
 
           <details>
-            <summary>How do you handle gates and dogs?</summary>
-            <p>We’ll text to confirm access instructions on signup. If your dog is in the yard, we follow your preference (e.g., dog inside during service).</p>
+            <summary>What happens after founders spots are filled?</summary>
+            <p>Once founders spots are filled, new subscriptions will be offered at $80/month. Founders customers keep their $60/month lifetime rate.</p>
           </details>
 
           <details>
-            <summary>Do you do one-time cleanups?</summary>
-            <p>Yes — one-time “reset” cleanups can be offered. For best results, the weekly plan keeps it under control.</p>
+            <summary>How do I cancel?</summary>
+            <p>Cancel anytime before your next billing date to avoid the next charge.</p>
           </details>
 
           <details>
-            <summary>Is the founders rate transferable?</summary>
-            <p>No. The founders rate is non-transferable and limited to early customers.</p>
+            <summary>How do you handle gates and pets?</summary>
+            <p>We’ll confirm access instructions on signup. If pets are in the yard, we follow your preference (for example: pet inside during service).</p>
+          </details>
+
+          <details>
+            <summary>Do you offer one-time cleanups?</summary>
+            <p>Yes — one-time “reset” cleanups may be available. For best results, the weekly plan keeps it under control.</p>
           </details>
         </div>
 
         <div class="ctaRow" style="margin-top:16px">
           <a class="btn btnPrimary" href="STRIPE_PAYMENT_LINK_URL_HERE" target="_blank" rel="noopener">
-            Start for $60/month
-            <span aria-hidden="true">→</span>
+            Lock in $60/month for life <span aria-hidden="true">→</span>
           </a>
           <a class="btn" href="#pricing">Review plan details</a>
         </div>
@@ -465,26 +463,24 @@
     </main>
   </div>
 
-  <!-- Sticky CTA (mobile / scroll) -->
+  <!-- Sticky CTA -->
   <div class="stickyCta" id="stickyCta" role="region" aria-label="Sticky call to action">
     <div class="stickyInner">
       <div class="left">
-        <b>Founders rate: $60/mo</b>
-        <span>Weekly scooping • Cancel anytime</span>
+        <b>Founders Rate: $60/mo for life</b>
+        <span>Weekly scooping • Limited spots</span>
       </div>
       <a class="btn btnPrimary" href="STRIPE_PAYMENT_LINK_URL_HERE" target="_blank" rel="noopener">
-        Start
-        <span aria-hidden="true">→</span>
+        Start <span aria-hidden="true">→</span>
       </a>
     </div>
   </div>
 
   <script>
-    // ====== EDIT THESE ======
-    const STRIPE_LINK = "STRIPE_PAYMENT_LINK_URL_HERE"; // replace with your live Stripe payment link
-    const DISPLAY_PHONE = "(555) 555-5555"; // optional
-    const FOUNDERS_SPOTS_TOTAL = 15;        // for scarcity display
-    // ========================
+    // ====== QUICK EDITS ======
+    const STRIPE_LINK = "STRIPE_PAYMENT_LINK_URL_HERE"; // paste your live Stripe payment link
+    const DISPLAY_PHONE = "(555) 555-5555";             // optional
+    // =========================
 
     // Replace all link placeholders
     document.querySelectorAll('a[href="STRIPE_PAYMENT_LINK_URL_HERE"]').forEach(a => a.href = STRIPE_LINK);
@@ -508,12 +504,7 @@
       }
     });
 
-    // Simple “limited spots” badge behavior (cosmetic)
-    // You can update remaining spots manually later if you want.
-    const spotsBadge = document.getElementById("spotsBadge");
-    spotsBadge.textContent = `Limited: first ${FOUNDERS_SPOTS_TOTAL} customers`;
-
-    // Sticky CTA: show after scroll a bit
+    // Sticky CTA: show after scroll
     const sticky = document.getElementById("stickyCta");
     const onScroll = () => {
       if (window.scrollY > 300) sticky.style.display = "block";
