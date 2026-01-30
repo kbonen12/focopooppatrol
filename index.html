@@ -4,9 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fort Collins Poop Patrol | West FoCo Dog Poop Scooping</title>
-  <meta name="description" content="Weekly dog poop scooping in West Fort Collins, CO. Founders rate $60/month for life. Waste removed completely. Cancel by text." />
-  <meta name="theme-color" content="#1f8a5a" />
-
+  
   <style>
     :root{
       --bg: #f7faf8;
@@ -34,65 +32,47 @@
 
     .wrap{ max-width: var(--max); margin:0 auto; padding:22px; }
 
-    /* Header */
     header{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding: 6px 0 16px; }
-    .logo{ width:44px; height:44px; border-radius:14px; background: linear-gradient(135deg, var(--brand), var(--brand2)); display:grid; place-items:center; color:white; font-size:20px; box-shadow: 0 4px 12px rgba(31,138,90,0.2); }
+    .logo{ width:44px; height:44px; border-radius:14px; background: linear-gradient(135deg, var(--brand), var(--brand2)); display:grid; place-items:center; color:white; font-size:20px; }
+    
     .brandTitle b{ font-size:14px; display:block; }
     .brandTitle span{ font-size:12px; color: var(--muted2); }
 
-    /* Buttons */
     .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 22px;
+      display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 20px;
       border-radius:999px; border:1px solid var(--line); background: #fff; font-weight:800;
       text-decoration:none; cursor:pointer; transition: transform .1s ease;
     }
     .btnPrimary{ background: linear-gradient(135deg, var(--brand), var(--brand2)); color: white; border:none; box-shadow: 0 10px 20px rgba(31,138,90,.2); }
-    .btn:active{ transform: scale(0.97); }
 
-    /* Hero & Layout */
     .hero{ display:grid; grid-template-columns: 1.15fr .85fr; gap:20px; }
     .card{ background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 28px rgba(15, 23, 42, .06); overflow: hidden; }
     
-    .heroLeft { 
-        padding:40px 32px; 
-        position: relative; 
-        background-image: linear-gradient(rgba(255,255,255,0.91), rgba(255,255,255,0.85)), url('http://googleusercontent.com/image_generation_content/0.png');
-        background-size: cover;
-        background-position: center;
-    }
+    .heroLeft { padding:32px; background: white; }
     .heroRight{ padding:32px; background: #f8fafc; display: flex; flex-direction: column; justify-content: center; }
 
-    h1{ font-size: 46px; margin: 0 0 15px; letter-spacing: -0.04em; line-height: 1.05; color: #000; }
-    .sub{ color: var(--muted); font-size: 18px; margin-bottom: 25px; max-width: 50ch; }
+    h1{ font-size: 42px; margin: 0 0 15px; letter-spacing: -0.03em; line-height: 1.1; color: #000; }
+    .sub{ color: var(--muted); font-size: 18px; margin-bottom: 25px; }
 
     .pill{ display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); font-size:13px; background:white; margin-bottom:12px; }
     
     @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
     .pill-urgent { animation: pulse 2s infinite; border-color: #feb2b2; color: #c53030; font-weight: bold; background: #fff5f5; }
 
-    /* Features Grid */
     .miniGrid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top: 30px; }
-    .mini{ padding:20px; border-radius: 16px; border: 1px solid var(--line); background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); }
+    .mini{ padding:20px; border-radius: 16px; border: 1px solid var(--line); background: #fafafa; }
     .mini h3{ margin:0 0 8px; font-size:15px; }
     .mini p{ margin:0; font-size:14px; color: var(--muted); }
 
-    /* Pricing */
     .priceLine{ display:flex; align-items:baseline; gap:10px; margin: 20px 0; }
     .priceStrike{ font-size: 22px; color: #94a3b8; text-decoration: line-through; }
-    .priceDeal{ font-size: 56px; font-weight: 900; letter-spacing: -0.02em; }
+    .priceDeal{ font-size: 56px; font-weight: 900; }
 
-    /* How it Works Section */
-    .howSection { margin-top: 40px; padding: 40px 0; text-align: center; }
-    .howGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px; }
-    .step { position: relative; }
-    .stepIcon { width: 60px; height: 60px; background: var(--brandSoft); color: var(--brand); border-radius: 50%; display: grid; place-items: center; font-size: 24px; margin: 0 auto 15px; font-weight: 900; }
-
-    footer{ margin-top: 60px; padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted2); font-size: 14px; display:flex; justify-content: space-between; align-items: center; }
+    footer{ margin-top: 60px; padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted2); font-size: 14px; display:flex; justify-content: space-between; }
 
     @media (max-width: 920px){
       .hero{ grid-template-columns: 1fr; }
-      h1{ font-size: 36px; }
-      .howGrid { grid-template-columns: 1fr; gap: 40px; }
+      h1{ font-size: 34px; }
     }
   </style>
 </head>
@@ -107,19 +87,19 @@
           <span>West FoCo Neighborhood Service</span>
         </div>
       </div>
-      <a class="btn btnPrimary" href="#pricing">Lock in Rate</a>
+      <a class="btn btnPrimary" href="#pricing">Get Started</a>
     </header>
 
     <main>
-      <section class="hero">
+      <div class="hero">
         <div class="card heroLeft">
           <div class="pill pill-urgent">🔥 Only 8/25 Founders Spots Left</div>
           <h1>More Foothills time.<br>Less "ugh, I should scoop."</h1>
           <p class="sub">
-            We keep your West Fort Collins yard spotless every week so you can actually enjoy your property. Reliable, professional, and locally owned.
+            We keep your West Fort Collins yard spotless every week so you can actually enjoy your property.
           </p>
 
-          <div style="display:flex; gap:12px; margin-bottom:40px; flex-wrap: wrap;">
+          <div style="display:flex; gap:12px; margin-bottom:30px;">
             <a class="btn btnPrimary" href="#pricing">Claim Founders Rate →</a>
             <a class="btn" href="tel:+19704305334">Text (970) 430-5334</a>
           </div>
@@ -127,111 +107,68 @@
           <div class="miniGrid">
             <div class="mini">
               <h3>🛡️ Safe Yard Guarantee</h3>
-              <p>We sanitize all tools between every single yard to keep your pets healthy.</p>
+              <p>Tools sanitized between every yard to keep your pets healthy.</p>
             </div>
             <div class="mini">
-              <h3>🚛 Waste Removed</h3>
-              <p>We take the waste with us every time. No smelly bags left in your trash bins.</p>
+              <h3>🚛 Total Removal</h3>
+              <p>We take the waste with us every time. No smelly bags in your bins.</p>
             </div>
           </div>
         </div>
 
         <aside class="card heroRight" id="pricing">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <h2 style="margin:0; font-size:20px;">Weekly Service</h2>
-            <span style="font-size:11px; font-weight:900; padding:4px 10px; border-radius:999px; background: var(--brandSoft); color: var(--brand);">FOUNDERS RATE</span>
-          </div>
-
+          <h2 style="margin:0; font-size:20px;">Weekly Subscription</h2>
+          
           <div class="priceLine">
             <span class="priceStrike">$80</span>
             <span class="priceDeal">$60</span>
-            <span style="color:var(--muted2); font-weight:bold;">/month</span>
+            <span style="color:var(--muted2)">/month</span>
           </div>
           
-          <p style="font-size:14px; color:var(--muted); margin-top:-10px; margin-bottom: 20px;">Covers up to 2 dogs. No contracts. Cancel anytime by text.</p>
+          <p style="font-size:14px; color:var(--muted); margin-top:-10px;">Includes up to 2 dogs. No contracts. Cancel by text.</p>
 
-          <ul style="padding-left:18px; font-size:15px; color:var(--muted); line-height:2.2; margin-bottom: 25px;">
-            <li><b>Weekly</b> full-yard scooping</li>
-            <li>Foothills / West FoCo exclusive route</li>
-            <li>Tools sanitized for safety</li>
-            <li><b>100% Waste removal</b> included</li>
+          <ul style="padding-left:18px; font-size:15px; color:var(--muted); line-height:2.2;">
+            <li><b>Weekly</b> full-yard cleanup</li>
+            <li>West Fort Collins exclusive route</li>
+            <li>Waste removed from property</li>
+            <li><b>Sanitization Guarantee</b></li>
           </ul>
 
-          <a class="btn btnPrimary" style="width:100%; padding:16px;" href="https://buy.stripe.com/YOUR_STRIPE_LINK">Start Subscription</a>
+          <a class="btn btnPrimary" style="width:100%; margin-top:15px;" href="https://buy.stripe.com/fZucN509bgSQ6hXfBg93y00">Start Service Now</a>
           
-          <div style="margin-top:30px; padding-top:20px; border-top:1px dashed var(--line); text-align: center;">
+          <div style="margin-top:25px; padding-top:20px; border-top:1px dashed var(--line);">
             <h3 style="margin:0; font-size:16px;">One-Time "Yard Reset"</h3>
-            <p style="font-size:13px; color:var(--muted); margin-bottom: 15px;">Heavy buildup? We'll get it clean for <b>$20</b>.</p>
-            <a class="btn" style="width:100%; font-size:14px;" href="https://buy.stripe.com/YOUR_ONE_TIME_LINK">Book One-Time Cleanup</a>
+            <p style="font-size:14px; color:var(--muted); margin-bottom: 15px;">Starting at $20. Best for cleanups after a long break.</p>
+            <a class="btn" style="width:100%; font-size:14px;" href="https://buy.stripe.com/fZu14n4pr0TS35Lbl093y02">Book One-Time Cleanup</a>
           </div>
         </aside>
-      </section>
+      </div>
 
-      <section class="howSection">
-        <h2 style="font-size: 28px; letter-spacing: -0.02em;">A Clean Yard in 3 Steps</h2>
-        <div class="howGrid">
-          <div class="step">
-            <div class="stepIcon">1</div>
-            <h3>Quick Signup</h3>
-            <p style="color:var(--muted); font-size:15px;">Pick your plan and pay securely via Stripe. We'll text you within an hour.</p>
-          </div>
-          <div class="step">
-            <div class="stepIcon">2</div>
-            <h3>Pick Your Day</h3>
-            <p style="color:var(--muted); font-size:15px;">We'll coordinate your weekly service day based on your West FoCo neighborhood.</p>
-          </div>
-          <div class="step">
-            <div class="stepIcon">3</div>
-            <h3>Fresh Yard</h3>
-            <p style="color:var(--muted); font-size:15px;">We scoop, sanitize, and haul away the waste. You just enjoy the lawn.</p>
-          </div>
-        </div>
-      </section>
-
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
-        <section class="card" style="padding:30px; display:flex; gap:20px; align-items:center;">
-          <img src="http://googleusercontent.com/image_generation_content/0.png" alt="Owner" style="width:100px; height:100px; border-radius:50%; object-fit:cover; border:4px solid var(--brandSoft);">
-          <div>
-            <h3 style="margin:0; font-size:18px;">Hi, I'm your neighbor!</h3>
-            <p style="margin:8px 0 0; font-size:14px; color:var(--muted); line-height: 1.5;">I started Poop Patrol to help families near the foothills spend less time scooping and more time outdoors. I personally handle every yard to ensure a perfect job.</p>
-          </div>
+      <div style="margin-top:20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <section class="card" style="padding:30px; border-left: 5px solid var(--brand2);">
+          <h3 style="margin:0 0 10px; font-size:18px;">👨‍⚕️ Support a CSU Vet Student</h3>
+          <p style="font-size:15px; color:var(--muted); line-height: 1.6;">
+            I’m a local **CSU Veterinary student** serving my neighbors in West Fort Collins. I started Poop Patrol to help fund my tuition while providing a service that keeps our local pets healthy and yards clean. Because of my background, I take cross-contamination and sanitization seriously—protecting your dogs is my top priority.
+          </p>
         </section>
 
         <section class="card" style="padding:30px; background: #f1f5f9; border: none;">
-          <h3 style="margin:0 0 15px; font-size:18px;">📍 West FoCo Service Area</h3>
-          <p style="font-size:14px; color:var(--muted); margin-bottom:15px;">By staying local to the West side, we can guarantee consistent, same-day service every week.</p>
+          <h3 style="margin:0 0 15px; font-size:18px;">📍 Serving West Fort Collins</h3>
+          <p style="font-size:15px; color:var(--muted); margin-bottom:15px;">We stay local to ensure consistent, reliable service for neighbors west of College Ave.</p>
           <div style="display:flex; flex-wrap:wrap; gap:10px;">
-            <span class="pill" style="margin:0; font-weight: bold;">Horsetooth Area</span>
+            <span class="pill" style="margin:0; font-weight: bold;">Horsetooth</span>
             <span class="pill" style="margin:0; font-weight: bold;">West Elizabeth</span>
             <span class="pill" style="margin:0; font-weight: bold;">City Park</span>
-            <span class="pill" style="margin:0; font-weight: bold;">Foothills Neighborhoods</span>
+            <span class="pill" style="margin:0; font-weight: bold;">Foothills</span>
           </div>
         </section>
       </div>
     </main>
 
     <footer>
-      <div style="display:flex; align-items:center; gap:10px;">
-        <b>Fort Collins Poop Patrol</b> • West Fort Collins, CO
-      </div>
-      <div>
-        Questions? <a href="tel:+19704305334" style="color:var(--text); font-weight:bold; text-decoration: none;">(970) 430-5334</a>
-      </div>
+      <div>© 2026 Fort Collins Poop Patrol</div>
+      <div>Questions? <b>(970) 430-5334</b></div>
     </footer>
   </div>
-
-  <script>
-    // Just a quick script to update the footer year
-    const yearSpan = document.createElement('span');
-    yearSpan.textContent = new Date().getFullYear();
-    document.querySelector('footer div').appendChild(document.createTextNode(' • '));
-    document.querySelector('footer div').appendChild(yearSpan);
-
-    // Favicon
-    const link = document.createElement('link');
-    link.rel = 'icon';
-    link.href = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>';
-    document.head.appendChild(link);
-  </script>
 </body>
 </html>
