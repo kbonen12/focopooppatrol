@@ -3,267 +3,96 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fort Collins Poop Patrol | Weekly Poop Scooping Subscription</title>
-  <meta name="description" content="Weekly dog poop scooping in Fort Collins. Founders Rate: $60/month for life (limited). New customers will be $80/month once filled. Easy signup, autopay, cancel anytime." />
-  <meta name="theme-color" content="#0f3d2e" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Fort Collins Poop Patrol" />
-  <meta property="og:description" content="Weekly dog poop scooping. Founders Rate: $60/month for life (limited). Quick signup." />
-  <meta property="og:type" content="website" />
+  <title>Fort Collins Poop Patrol | West FoCo Dog Poop Scooping</title>
+  <meta name="description" content="Weekly dog poop scooping in West Fort Collins, CO. Founders rate $60/month for life. Waste removed completely. Cancel by text." />
+  <meta name="theme-color" content="#1f8a5a" />
 
   <style>
-  .priceStrike {
-  font-size: 22px;
-  font-weight: 800;
-  color: #94a3b8;
-  text-decoration: line-through;
-  margin-right: 8px;
-}
-
-.priceDeal {
-  font-size: 42px;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-}
     :root{
-      --bg:#0b1220;
-      --card:#0f1b31;
-      --card2:#0e172b;
-      --text:#eaf2ff;
-      --muted:#b7c6e6;
-      --brand:#22c55e;
-      --brand2:#16a34a;
-      --warn:#fbbf24;
-      --line:rgba(255,255,255,.10);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --bg: #f7faf8;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --muted2:#64748b;
+      --line: rgba(15, 23, 42, .10);
+      --brand: #1f8a5a;
+      --brand2:#2bb673;
+      --brandSoft: rgba(31, 138, 90, .10);
       --radius: 18px;
       --max: 1080px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
+
+    *{ box-sizing:border-box; }
+    html, body{ height:100%; scroll-behavior: smooth; }
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 700px at 15% 10%, rgba(34,197,94,.20), transparent 60%),
-                  radial-gradient(900px 600px at 90% 0%, rgba(59,130,246,.18), transparent 55%),
-                  linear-gradient(180deg, #070b14, var(--bg));
-      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
       line-height:1.45;
     }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
-    header{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:10px 0 18px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      user-select:none;
-    }
-    .logo{
-      width:40px; height:40px; border-radius:14px;
-      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(16,185,129,.75));
-      box-shadow: var(--shadow);
-      display:grid; place-items:center;
-      font-weight:800; color:#06210f;
-    }
-    .brand h1{font-size:16px; margin:0}
-    .brand p{margin:0; font-size:12px; color:var(--muted)}
-    nav{display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end}
-    nav a{
-      text-decoration:none; font-size:13px; color:var(--muted);
-      padding:8px 10px; border-radius:999px;
-      border:1px solid transparent;
-    }
-    nav a:hover{border-color:var(--line); color:var(--text); background:rgba(255,255,255,.04)}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:12px 16px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      text-decoration:none;
-      font-weight:700;
-      cursor:pointer;
-      transition: transform .08s ease, background .15s ease, border-color .15s ease;
-      background:rgba(255,255,255,.04);
-      color:var(--text);
-      white-space:nowrap;
-    }
-    .btn:hover{background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.18)}
-    .btn:active{transform: translateY(1px)}
-    .btnPrimary{
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      border-color: rgba(0,0,0,.0);
-      color:#06140c;
-      box-shadow: 0 12px 28px rgba(34,197,94,.22);
-    }
-    .btnPrimary:hover{filter:brightness(1.03)}
-    .pill{
-      display:inline-flex; gap:10px; align-items:center;
-      border:1px solid var(--line);
-      padding:8px 12px; border-radius:999px;
-      background:rgba(255,255,255,.03);
-      color:var(--muted);
-      font-size:13px;
-    }
-    .hero{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:22px;
-      padding:18px 0 10px;
-      align-items:stretch;
-    }
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .heroLeft{padding:22px}
-    .kicker{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px}
-    .kicker .pill b{color:var(--text); font-weight:800}
-    h2{
-      margin:0 0 12px;
-      font-size:40px;
-      line-height:1.07;
-      letter-spacing:-.02em;
-    }
-    .sub{
-      margin:0 0 18px;
-      color:var(--muted);
-      font-size:16px;
-      max-width: 60ch;
-    }
-    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:16px}
-    .micro{
-      font-size:12px; color:var(--muted); margin:0;
-      display:flex; gap:10px; flex-wrap:wrap;
-    }
-    .check{color: #86efac}
-    .heroRight{padding:18px}
-    .priceBox{padding:18px}
-    .priceTop{
-      display:flex; justify-content:space-between; align-items:flex-start; gap:12px;
-      margin-bottom:10px;
-    }
-    .priceTop h3{margin:0; font-size:18px}
-    .badge{
-      font-size:12px; font-weight:800;
-      padding:6px 10px; border-radius:999px;
-      background: rgba(251,191,36,.15);
-      border: 1px solid rgba(251,191,36,.25);
-      color: #fde68a;
-      white-space:nowrap;
-    }
-    .price{
-      font-size:42px; font-weight:900; letter-spacing:-.02em; margin:6px 0 2px;
-    }
-    .per{color:var(--muted); font-size:13px; margin:0 0 14px}
-    ul{padding-left:18px; margin:0}
-    li{margin:8px 0; color:var(--muted)}
-    li b{color:var(--text)}
-    .fine{
-      margin-top:14px;
-      font-size:12px;
-      color:var(--muted);
-      border-top:1px solid var(--line);
-      padding-top:12px;
-    }
-    .trustRow{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:12px;
-    }
-    .trustTag{
-      font-size:12px; color:var(--muted);
-      border:1px solid var(--line);
-      padding:8px 10px; border-radius:999px;
-      background: rgba(255,255,255,.02);
-    }
-    .grid3{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-      margin:16px 0 0;
-    }
-    .mini{padding:16px}
-    .mini h4{margin:0 0 8px; font-size:15px}
-    .mini p{margin:0; color:var(--muted); font-size:13px}
-    section{margin-top:22px}
-    .sectionCard{padding:18px}
-    .sectionTitle{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin-bottom:10px}
-    .sectionTitle h3{margin:0; font-size:20px}
-    .sectionTitle p{margin:0; color:var(--muted); font-size:13px}
-    .steps{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
-    .step{padding:16px}
-    .num{
-      width:34px; height:34px; border-radius:12px;
-      display:grid; place-items:center;
-      background: rgba(34,197,94,.16);
-      border:1px solid rgba(34,197,94,.25);
-      color:#a7f3d0;
-      font-weight:900;
-      margin-bottom:10px;
-    }
-    .faq{display:grid; gap:10px}
-    details{
-      border:1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255,255,255,.03);
-      padding:12px 14px;
-    }
-    summary{
-      cursor:pointer;
-      font-weight:800;
-      list-style:none;
-    }
-    summary::-webkit-details-marker{display:none}
-    details p{margin:10px 0 0; color:var(--muted)}
-    footer{
-      margin:26px 0 18px;
-      color:var(--muted);
-      font-size:12px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      justify-content:space-between;
-      align-items:center;
-    }
-    .stickyCta{
-      position:fixed;
-      left:0; right:0; bottom:0;
-      padding:10px 12px;
-      background: rgba(7,10,18,.78);
-      backdrop-filter: blur(10px);
-      border-top: 1px solid rgba(255,255,255,.10);
-      display:none;
-      z-index:999;
-    }
-    .stickyInner{
-      max-width:var(--max);
-      margin:0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-    }
-    .stickyInner .left{
-      display:flex; flex-direction:column; gap:2px;
-      min-width:0;
-    }
-    .stickyInner .left b{font-size:13px}
-    .stickyInner .left span{font-size:12px; color:var(--muted)}
-    .stickyInner .btn{padding:10px 14px}
 
-    /* New: spacing + subtle divider for the new one-time option */
-    .divider{height:1px;background:var(--line);margin:16px 0}
-    .smallNote{font-size:12px;color:var(--muted);margin:8px 0 0}
+    .wrap{ max-width: var(--max); margin:0 auto; padding:22px; }
+
+    /* Header */
+    header{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding: 6px 0 16px; }
+    .logo{ width:44px; height:44px; border-radius:14px; background: linear-gradient(135deg, var(--brand), var(--brand2)); display:grid; place-items:center; color:white; font-size:20px; box-shadow: 0 4px 12px rgba(31,138,90,0.2); }
+    .brandTitle b{ font-size:14px; display:block; }
+    .brandTitle span{ font-size:12px; color: var(--muted2); }
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 22px;
+      border-radius:999px; border:1px solid var(--line); background: #fff; font-weight:800;
+      text-decoration:none; cursor:pointer; transition: transform .1s ease;
+    }
+    .btnPrimary{ background: linear-gradient(135deg, var(--brand), var(--brand2)); color: white; border:none; box-shadow: 0 10px 20px rgba(31,138,90,.2); }
+    .btn:active{ transform: scale(0.97); }
+
+    /* Hero & Layout */
+    .hero{ display:grid; grid-template-columns: 1.15fr .85fr; gap:20px; }
+    .card{ background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 28px rgba(15, 23, 42, .06); overflow: hidden; }
+    
+    .heroLeft { 
+        padding:40px 32px; 
+        position: relative; 
+        background-image: linear-gradient(rgba(255,255,255,0.91), rgba(255,255,255,0.85)), url('http://googleusercontent.com/image_generation_content/0.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .heroRight{ padding:32px; background: #f8fafc; display: flex; flex-direction: column; justify-content: center; }
+
+    h1{ font-size: 46px; margin: 0 0 15px; letter-spacing: -0.04em; line-height: 1.05; color: #000; }
+    .sub{ color: var(--muted); font-size: 18px; margin-bottom: 25px; max-width: 50ch; }
+
+    .pill{ display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); font-size:13px; background:white; margin-bottom:12px; }
+    
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+    .pill-urgent { animation: pulse 2s infinite; border-color: #feb2b2; color: #c53030; font-weight: bold; background: #fff5f5; }
+
+    /* Features Grid */
+    .miniGrid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top: 30px; }
+    .mini{ padding:20px; border-radius: 16px; border: 1px solid var(--line); background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); }
+    .mini h3{ margin:0 0 8px; font-size:15px; }
+    .mini p{ margin:0; font-size:14px; color: var(--muted); }
+
+    /* Pricing */
+    .priceLine{ display:flex; align-items:baseline; gap:10px; margin: 20px 0; }
+    .priceStrike{ font-size: 22px; color: #94a3b8; text-decoration: line-through; }
+    .priceDeal{ font-size: 56px; font-weight: 900; letter-spacing: -0.02em; }
+
+    /* How it Works Section */
+    .howSection { margin-top: 40px; padding: 40px 0; text-align: center; }
+    .howGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px; }
+    .step { position: relative; }
+    .stepIcon { width: 60px; height: 60px; background: var(--brandSoft); color: var(--brand); border-radius: 50%; display: grid; place-items: center; font-size: 24px; margin: 0 auto 15px; font-weight: 900; }
+
+    footer{ margin-top: 60px; padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted2); font-size: 14px; display:flex; justify-content: space-between; align-items: center; }
 
     @media (max-width: 920px){
-      .hero{grid-template-columns:1fr}
-      h2{font-size:34px}
-      .grid3, .steps{grid-template-columns:1fr}
-      nav{display:none}
+      .hero{ grid-template-columns: 1fr; }
+      h1{ font-size: 36px; }
+      .howGrid { grid-template-columns: 1fr; gap: 40px; }
     }
   </style>
 </head>
@@ -271,296 +100,138 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="brand" aria-label="Fort Collins Poop Patrol">
+      <div style="display:flex; align-items:center; gap:12px;">
         <div class="logo">🐾</div>
-        <div>
-          <h1>Fort Collins Poop Patrol</h1>
-          <p>Weekly dog poop scooping • Fort Collins, CO</p>
+        <div class="brandTitle">
+          <b>Fort Collins Poop Patrol</b>
+          <span>West FoCo Neighborhood Service</span>
         </div>
       </div>
-
-      <nav>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <a class="btn btnPrimary" id="ctaTop" href="#" target="_blank" rel="noopener">
-        Lock in $60/mo for life <span aria-hidden="true">→</span>
-      </a>
+      <a class="btn btnPrimary" href="#pricing">Lock in Rate</a>
     </header>
 
     <main>
-      <div class="hero">
+      <section class="hero">
         <div class="card heroLeft">
-          <div class="kicker">
-            <div class="pill"><span class="check">✓</span> <b>Founders Rate:</b> $60/month for life</div>
-            <div class="pill"><span class="check">✓</span> Weekly cleanups</div>
-            <div class="pill"><span class="check">✓</span> Autopay • Cancel anytime</div>
-          </div>
-
-          <h2>Poop-free yard, every week — without thinking about it.</h2>
+          <div class="pill pill-urgent">🔥 Only 8/25 Founders Spots Left</div>
+          <h1>More Foothills time.<br>Less "ugh, I should scoop."</h1>
           <p class="sub">
-            Lock in our founders rate and keep it for life.
-            Once the limited spots are filled, new customers will pay $80/month.
-            Same service — lower lifetime price.
+            We keep your West Fort Collins yard spotless every week so you can actually enjoy your property. Reliable, professional, and locally owned.
           </p>
 
-          <div class="ctaRow">
-            <a class="btn btnPrimary" id="ctaHero" href="#" target="_blank" rel="noopener">
-              Claim lifetime founders rate <span aria-hidden="true">→</span>
-            </a>
-            <a class="btn" href="#pricing">See what’s included</a>
+          <div style="display:flex; gap:12px; margin-bottom:40px; flex-wrap: wrap;">
+            <a class="btn btnPrimary" href="#pricing">Claim Founders Rate →</a>
+            <a class="btn" href="tel:+19704305334">Text (970) 430-5334</a>
           </div>
 
-          <p class="micro">
-            <span>✅ No contracts</span>
-            <span>✅ Gate-friendly process</span>
-            <span>✅ Receipt emailed instantly</span>
-          </p>
-
-          <div class="grid3">
-            <div class="card mini">
-              <h4>Safer for pets & kids</h4>
-              <p>Cleaner yard, less mess tracked inside.</p>
+          <div class="miniGrid">
+            <div class="mini">
+              <h3>🛡️ Safe Yard Guarantee</h3>
+              <p>We sanitize all tools between every single yard to keep your pets healthy.</p>
             </div>
-            <div class="card mini">
-              <h4>Save your time</h4>
-              <p>Weekly visits means it never piles up.</p>
-            </div>
-            <div class="card mini">
-              <h4>Reliable & simple</h4>
-              <p>Monthly autopay. Show up. Scoop. Done.</p>
+            <div class="mini">
+              <h3>🚛 Waste Removed</h3>
+              <p>We take the waste with us every time. No smelly bags left in your trash bins.</p>
             </div>
           </div>
         </div>
 
         <aside class="card heroRight" id="pricing">
-          <div class="priceBox">
-            <div class="priceTop">
-              <h3>Weekly Cleanup Subscription</h3>
-              <div class="badge">Lifetime founders pricing</div>
-            </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <h2 style="margin:0; font-size:20px;">Weekly Service</h2>
+            <span style="font-size:11px; font-weight:900; padding:4px 10px; border-radius:999px; background: var(--brandSoft); color: var(--brand);">FOUNDERS RATE</span>
+          </div>
 
-<div class="price">
-  <span class="priceStrike">$80</span>
-  <span class="priceDeal">$60</span>
-  <span style="font-size:16px; font-weight:800; color:var(--muted)">/mo</span>
-</div>            <p class="per">
-              $60/month locked in for life.
-              Standard pricing will be $80/month once founders spots are filled.
-            </p>
+          <div class="priceLine">
+            <span class="priceStrike">$80</span>
+            <span class="priceDeal">$60</span>
+            <span style="color:var(--muted2); font-weight:bold;">/month</span>
+          </div>
+          
+          <p style="font-size:14px; color:var(--muted); margin-top:-10px; margin-bottom: 20px;">Covers up to 2 dogs. No contracts. Cancel anytime by text.</p>
 
-            <ul>
-              <li><b>Weekly</b> full yard cleanup</li>
-              <li>Typical residential yards</li>
-              <li>Consistent service to keep buildup under control</li>
-            </ul>
+          <ul style="padding-left:18px; font-size:15px; color:var(--muted); line-height:2.2; margin-bottom: 25px;">
+            <li><b>Weekly</b> full-yard scooping</li>
+            <li>Foothills / West FoCo exclusive route</li>
+            <li>Tools sanitized for safety</li>
+            <li><b>100% Waste removal</b> included</li>
+          </ul>
 
-            <div class="ctaRow" style="margin-top:14px">
-              <a class="btn btnPrimary" id="ctaPricing" href="#" target="_blank" rel="noopener">
-                Start subscription <span aria-hidden="true">→</span>
-              </a>
-              <button class="btn" id="copySubLink" type="button">Copy signup link</button>
-            </div>
-
-            <!-- NEW: One-time option -->
-            <div class="divider"></div>
-
-            <div class="priceTop" style="margin-bottom:6px">
-              <h3 style="margin:0; font-size:16px;">One-Time Cleanup</h3>
-              <div class="badge" style="background:rgba(34,197,94,.14); border-color:rgba(34,197,94,.22); color:#bbf7d0;">Quick reset</div>
-            </div>
-
-            <div class="price">$20<span style="font-size:16px; font-weight:800; color:var(--muted)"> one-time</span></div>
-            <p class="per">Perfect to try the service or get your yard back under control fast.</p>
-
-            <div class="ctaRow" style="margin-top:10px">
-              <a class="btn" id="ctaOneTime" href="#" target="_blank" rel="noopener">
-                Book one-time cleanup <span aria-hidden="true">→</span>
-              </a>
-            </div>
-
-            <p class="smallNote">
-              Most customers switch to the weekly plan to keep it maintained and lock in the founders rate.
-            </p>
-            <!-- /NEW -->
-
-            <div class="fine">
-              Founders pricing is a lifetime rate tied to this account and is non-transferable.
-              Once founders spots are filled, new subscriptions will be offered at $80/month.
-              Prefer text? <span id="phoneText">(555) 555-5555</span>
-            </div>
-
-            <div class="trustRow" aria-label="Trust and reassurance">
-              <div class="trustTag">🔒 Secure checkout via Stripe</div>
-              <div class="trustTag">📅 Billing monthly</div>
-              <div class="trustTag">🧾 Email receipt</div>
-              <div class="trustTag">⏳ Limited founders spots available</div>
-            </div>
+          <a class="btn btnPrimary" style="width:100%; padding:16px;" href="https://buy.stripe.com/YOUR_STRIPE_LINK">Start Subscription</a>
+          
+          <div style="margin-top:30px; padding-top:20px; border-top:1px dashed var(--line); text-align: center;">
+            <h3 style="margin:0; font-size:16px;">One-Time "Yard Reset"</h3>
+            <p style="font-size:13px; color:var(--muted); margin-bottom: 15px;">Heavy buildup? We'll get it clean for <b>$20</b>.</p>
+            <a class="btn" style="width:100%; font-size:14px;" href="https://buy.stripe.com/YOUR_ONE_TIME_LINK">Book One-Time Cleanup</a>
           </div>
         </aside>
+      </section>
+
+      <section class="howSection">
+        <h2 style="font-size: 28px; letter-spacing: -0.02em;">A Clean Yard in 3 Steps</h2>
+        <div class="howGrid">
+          <div class="step">
+            <div class="stepIcon">1</div>
+            <h3>Quick Signup</h3>
+            <p style="color:var(--muted); font-size:15px;">Pick your plan and pay securely via Stripe. We'll text you within an hour.</p>
+          </div>
+          <div class="step">
+            <div class="stepIcon">2</div>
+            <h3>Pick Your Day</h3>
+            <p style="color:var(--muted); font-size:15px;">We'll coordinate your weekly service day based on your West FoCo neighborhood.</p>
+          </div>
+          <div class="step">
+            <div class="stepIcon">3</div>
+            <h3>Fresh Yard</h3>
+            <p style="color:var(--muted); font-size:15px;">We scoop, sanitize, and haul away the waste. You just enjoy the lawn.</p>
+          </div>
+        </div>
+      </section>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
+        <section class="card" style="padding:30px; display:flex; gap:20px; align-items:center;">
+          <img src="http://googleusercontent.com/image_generation_content/0.png" alt="Owner" style="width:100px; height:100px; border-radius:50%; object-fit:cover; border:4px solid var(--brandSoft);">
+          <div>
+            <h3 style="margin:0; font-size:18px;">Hi, I'm your neighbor!</h3>
+            <p style="margin:8px 0 0; font-size:14px; color:var(--muted); line-height: 1.5;">I started Poop Patrol to help families near the foothills spend less time scooping and more time outdoors. I personally handle every yard to ensure a perfect job.</p>
+          </div>
+        </section>
+
+        <section class="card" style="padding:30px; background: #f1f5f9; border: none;">
+          <h3 style="margin:0 0 15px; font-size:18px;">📍 West FoCo Service Area</h3>
+          <p style="font-size:14px; color:var(--muted); margin-bottom:15px;">By staying local to the West side, we can guarantee consistent, same-day service every week.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <span class="pill" style="margin:0; font-weight: bold;">Horsetooth Area</span>
+            <span class="pill" style="margin:0; font-weight: bold;">West Elizabeth</span>
+            <span class="pill" style="margin:0; font-weight: bold;">City Park</span>
+            <span class="pill" style="margin:0; font-weight: bold;">Foothills Neighborhoods</span>
+          </div>
+        </section>
       </div>
-
-      <section id="how" class="card sectionCard">
-        <div class="sectionTitle">
-          <h3>How it works</h3>
-        </div>
-
-        <div class="steps">
-          <div class="card step">
-            <div class="num">1</div>
-            <h4 style="margin:0 0 6px">Sign up in 60 seconds</h4>
-            <p style="margin:0;color:var(--muted)">Tap the button, enter your payment method, and you’re in. Monthly autopay.</p>
-          </div>
-          <div class="card step">
-            <div class="num">2</div>
-            <h4 style="margin:0 0 6px">We confirm access</h4>
-            <p style="margin:0;color:var(--muted)">Gate code, preferred day, and any notes. Quick text confirmation.</p>
-          </div>
-          <div class="card step">
-            <div class="num">3</div>
-            <h4 style="margin:0 0 6px">Weekly cleanup happens</h4>
-            <p style="margin:0;color:var(--muted)">We scoop the yard weekly so it stays clean and manageable.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="card sectionCard">
-        <div class="sectionTitle">
-          <h3>Common questions (answered)</h3>
-          <p>Confidence before checkout.</p>
-        </div>
-
-        <div class="grid3">
-          <div class="card mini">
-            <h4>“Do I need to be home?”</h4>
-            <p>Nope. We just need safe access to the yard.</p>
-          </div>
-          <div class="card mini">
-            <h4>“What if it snows?”</h4>
-            <p>We work around weather when safe. We’ll communicate clearly.</p>
-          </div>
-          <div class="card mini">
-            <h4>“Can I cancel?”</h4>
-            <p>Yes — cancel anytime before your next billing date.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="card sectionCard">
-        <div class="sectionTitle">
-          <h3>FAQ</h3>
-        </div>
-
-        <div class="faq">
-          <details>
-            <summary>What exactly is included in the $60/month plan?</summary>
-            <p>One weekly visit for a typical residential yard. The goal is to keep buildup under control so your yard stays clean and usable.</p>
-          </details>
-
-          <details>
-            <summary>Is the founders rate really “for life”?</summary>
-            <p>Yes — founders pricing stays at $60/month for as long as your subscription remains active. It’s tied to your account and non-transferable.</p>
-          </details>
-
-          <details>
-            <summary>What happens after founders spots are filled?</summary>
-            <p>Once founders spots are filled, new subscriptions will be offered at $80/month. Founders customers keep their $60/month lifetime rate.</p>
-          </details>
-
-          <details>
-            <summary>How do I cancel?</summary>
-            <p>Cancel anytime before your next billing date to avoid the next charge.</p>
-          </details>
-
-          <details>
-            <summary>How do you handle gates and pets?</summary>
-            <p>We’ll confirm access instructions on signup. If pets are in the yard, we follow your preference (for example: pet inside during service).</p>
-          </details>
-
-          <details>
-            <summary>Do you offer one-time cleanups?</summary>
-            <p>Yes — one-time “reset” cleanups are available for $20. Many customers start with a one-time cleanup, then switch to weekly service to keep it maintained.</p>
-          </details>
-        </div>
-
-        <div class="ctaRow" style="margin-top:16px">
-          <a class="btn btnPrimary" id="ctaBottom" href="#" target="_blank" rel="noopener">
-            Lock in $60/month for life <span aria-hidden="true">→</span>
-          </a>
-          <a class="btn" href="#pricing">Review plan details</a>
-        </div>
-      </section>
-
-      <footer>
-        <div>
-          <b>Fort Collins Poop Patrol</b> • Weekly yard cleanup • Fort Collins, CO
-        </div>
-        <div>
-          <span id="year"></span> • <a href="#pricing">Pricing</a> • <a href="#faq">FAQ</a>
-        </div>
-      </footer>
     </main>
-  </div>
 
-  <!-- Sticky CTA -->
-  <div class="stickyCta" id="stickyCta" role="region" aria-label="Sticky call to action">
-    <div class="stickyInner">
-      <div class="left">
-        <b>Founders Rate: $60/mo for life</b>
-        <span>Weekly scooping • Limited spots</span>
+    <footer>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <b>Fort Collins Poop Patrol</b> • West Fort Collins, CO
       </div>
-      <a class="btn btnPrimary" id="ctaSticky" href="#" target="_blank" rel="noopener">
-        Start <span aria-hidden="true">→</span>
-      </a>
-    </div>
+      <div>
+        Questions? <a href="tel:+19704305334" style="color:var(--text); font-weight:bold; text-decoration: none;">(970) 430-5334</a>
+      </div>
+    </footer>
   </div>
 
   <script>
-    // ====== QUICK EDITS ======
-    const STRIPE_SUB_LINK = "https://buy.stripe.com/test_aFa7sKfYi1QFakp8Y4e3e00"; // subscription link
-    const STRIPE_ONE_TIME_LINK = "https://buy.stripe.com/test_aFacN43bw0MBeAFeioe3e01";      // one-time $20 link
-    const DISPLAY_PHONE = "(970) 430-5334";
-    // =========================
+    // Just a quick script to update the footer year
+    const yearSpan = document.createElement('span');
+    yearSpan.textContent = new Date().getFullYear();
+    document.querySelector('footer div').appendChild(document.createTextNode(' • '));
+    document.querySelector('footer div').appendChild(yearSpan);
 
-    // Wire up all subscription CTAs
-    document.getElementById("ctaTop").href = STRIPE_SUB_LINK;
-    document.getElementById("ctaHero").href = STRIPE_SUB_LINK;
-    document.getElementById("ctaPricing").href = STRIPE_SUB_LINK;
-    document.getElementById("ctaBottom").href = STRIPE_SUB_LINK;
-    document.getElementById("ctaSticky").href = STRIPE_SUB_LINK;
-
-    // One-time CTA
-    document.getElementById("ctaOneTime").href = STRIPE_ONE_TIME_LINK;
-
-    // Phone display
-    document.getElementById("phoneText").textContent = DISPLAY_PHONE;
-
-    // Year
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Copy subscription link button
-    document.getElementById("copySubLink").addEventListener("click", async () => {
-      try{
-        await navigator.clipboard.writeText(STRIPE_SUB_LINK);
-        const btn = document.getElementById("copySubLink");
-        const old = btn.textContent;
-        btn.textContent = "Copied!";
-        setTimeout(()=> btn.textContent = old, 1200);
-      }catch(e){
-        alert("Couldn’t copy automatically. Here’s the link:\n" + STRIPE_SUB_LINK);
-      }
-    });
-
-    // Sticky CTA show after scroll
-    const sticky = document.getElementById("stickyCta");
-    const onScroll = () => {
-      if (window.scrollY > 300) sticky.style.display = "block";
-      else sticky.style.display = "none";
-    };
-    window.addEventListener("scroll", onScroll, {passive:true});
-    onScroll();
+    // Favicon
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>';
+    document.head.appendChild(link);
   </script>
 </body>
 </html>
